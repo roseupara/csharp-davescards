@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVES CARDS</title>
+    <link href="~/css/davesstyle.css" rel="stylesheet" />
+    <!--Hem ikon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Instagram ikon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Facebook ikon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Mail ikon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Telefon ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Account ikon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- Bild på loggan -->
+        <div class="brand-logo">
+            <a href="~/Home/Index"> <img src="~/bilder/newLogo.png" /> </a>
+
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <!-- Menyn -->
+        <div class="navbar-links">
+            <ul>
+
+                <li><a href="~/Home/Index"> <i class="fa fa-home" style="font-size:24px"> </i>Hem</a> </li>
+                <li><a href="~/Shop/Pokemon">Pokemon</a> </li>
+                <li><a href="~/Shop/DragonBall">Dragon Ball</a> </li>
+                <li><a href="~/Shop/Tillbehor">Tillbehör</a> </li>
+                <li><a href="~/Home/PreOrder">Pre-order</a> </li>
+
+            </ul>
+        </div>
+        <div class="navbar-else">
+            <ul>
+
+
+
+                @if (User.Identity.IsAuthenticated)
+                {
+
+                    <a class="loggautBtn" href="@Url.Action("SignOut","Home")">Logga ut</a>
+
+                    <li class="loggainBtn"><a href="#"><i class="fa fa-user-circle" id="myicon" style="font-size:24px"></i></a> </li>
+
+                }
+                else
+                {
+
+                    <li class="loggainBtn"><a href="~/Home/Login"><i class="fa fa-user-circle" id="myicon" style="font-size:24px"></i></a> </li>
+
+                }
+
+                <li><a href="#" class="kundkorg"> <i class="fa fa-shopping-basket" style="font-size:21px"> </i></a> </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    @RenderBody()
+
+
+    <div class="footer">
+        <div class="info-links">
+            <ul>
+                <li class="FLinks">
+                    <h3>Länkar</h3>
+                    <a href="https://www.instagram.com/daves.collectibles/"> <i class="fa fa-instagram" style="font-size:24px"></i> Instagram</a>
+                    <a href="#"><i class="fa fa-facebook-square" style="font-size:24px"></i> Facebook</a>
+                </li>
+                <li class="FAdress">
+                    <h3>Adress</h3>
+                    <p> Västerslänt XX</p>
+                    <p> 424 XX </p>
+                    <p>Angered</p>
+                </li>
+                <li class="FContact">
+                    <h3>Kontakt</h3>
+                    <a href="mailto:roseupara@gmail.com"> <i class="material-icons" style="font-size:24px">email</i> Mail</a>
+                    <a href="#"><i class="fa fa-phone" style="font-size:24px"></i> Telefon</a>
+                    <p style="font-size:12px">Tillgänglig mellan: 16.00 - 20.00</p>
+                </li>
+                <li class="FOmOss">
+                    <h3>Om oss</h3>
+                    <p>
+                        En webbutik som erbjuder begagnade Pokemon och Dragon Ball kort <br>
+                        samt andra samlarsaker <br>
+                        och tillbehör till bra priser.
+                    </p>
+                    <p class="Fm">Förköp och special beställningar är tillgängligt för medlemmar.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarItems = document.getElementsByClassName('navbar-links')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarItems.classList.toggle('active')
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".content-pic").fadeIn(3000);
+        });
+    </script>
+
+</body>
+
+</html>

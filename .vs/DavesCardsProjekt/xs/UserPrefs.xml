@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{563D7940-0261-4C92-9802-27B0DF449C1C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DavesCardsProjekt/Views/Home/Login.cshtml">
+    <Files>
+      <File FileName="DavesCardsProjekt/Views/Shared/_Layout.cshtml" Line="98" Column="36" />
+      <File FileName="DavesCardsProjekt/wwwroot/css/davesstyle.css" />
+      <File FileName="DavesCardsProjekt/Controllers/HomeController.cs" Line="39" Column="14" />
+      <File FileName="DavesCardsProjekt/Views/Home/Login.cshtml" Line="1" Column="1" />
+      <File FileName="DavesCardsProjekt/Models/Customer.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DavesCardsProjekt" expanded="True">
+            <Node name="DavesCardsProjekt" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Login.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DavesCardsProjekt PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

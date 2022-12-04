@@ -1,0 +1,42 @@
+﻿@model DavesCardsProjekt.Models.Customer
+
+<div class="acc-head">
+    <h3>Välkommen!</h3>
+ </div>
+
+<div class="acc-container">
+
+    @using (Html.BeginForm()) //Skickar värden till controller HomeController
+    {
+        <h3>Logga in</h3>
+        <div class="Loggain">
+            <p>Användarnamn</p>
+            <div> @Html.EditorFor(m => m.Username) </div> <br />
+            <p>Lösenord</p>
+            <div> @Html.PasswordFor(m => m.Passw) </div> <br />
+            <button type="submit" name="loggain"> Logga in </button>
+        </div>
+
+        <div class="errormsg">
+            <br />
+            <p> @ViewBag.ErrorMessage </p>
+        </div>
+    }
+
+    @using (Html.BeginForm("Register", "Home", FormMethod.Post)) //Skickar inmatade värden till HomeController
+    {
+        <h3>Skapa konto </h3>
+        <div class="Loggain">
+            <p>Användarnamn</p>
+            <div div="inmatning"> @Html.EditorFor(m => m.Username) </div> <br />
+            <p>E-postadress</p>
+            <div div="inmatning"> @Html.EditorFor(m => m.Email) </div> <br />
+            <p>Lösenord</p>
+            <div div="inmatning"> @Html.PasswordFor(m => m.Passw) </div> <br />
+            <button type="submit" name="skapakonto"> Skapa konto</button>
+
+        </div>
+
+    }
+
+</div>

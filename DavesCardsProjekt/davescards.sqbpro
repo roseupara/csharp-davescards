@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/roseupara/Desktop/DavesCardsProjekt/DavesCardsProjekt/davescards.db" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1330"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO `Cards` (`Id`, `CategoryId`, `Name`, `Price`, `Stock`, `Description`, `ImgPath`) VALUES
+(1, 1, 'Charizard ex - 012/052 \r\n', 520, 1, 'Japansk Ex Fire Red &amp; Leaf Green', 'charizard1.jpeg'),
+(2, 1, 'Torchic - 047/PCG-P', 60, 1, 'PokéPark Promo 2005', 'Torchic1.jpeg'),
+(3, 1, 'Heatran Lv. X - 092/DP-P ', 100, 1, 'Japanskt Pokemon Black Star Promo', 'Heatran1.jpeg'),
+(4, 1, 'Wigglytuff Holo Rare - 052/075', 30, 1, 'EX Crystal Guardians JP', 'Wigglytuff1.jpeg'),
+(5, 1, 'Groudon - 042/PCG-P', 60, 1, 'PokéPark Promo 2005', 'Groudon1.jpeg'),
+(6, 1, 'Rayquaza Holo Rare - 011/020', 80, 1, 'DS Japanskt Pokemonkort', 'rayq1.jpeg'),
+(7, 2, 'Fired Up SS Son Gohan', 30, 1, 'BT5-082 Holo Rare - Dragon Ball Super CCG', 'FiredUp1.jpeg'),
+(8, 2, 'Dauntless Spirit SSB Vegeta', 30, 1, 'BT3-060 Holo Rare - Dragon Ball Super CCG', 'Dauntless1.jpeg'),
+(9, 2, 'Resolute Strength Son Goku', 30, 1, ' BT5-030 - Dragon Ball Super CCG', 'ResoluteStrength1.jpeg'),
+(10, 2, 'Gigantic Bomber Dr.Uiro ', 45, 1, 'BT8-123 Super Rare - Dragon Ball Super CCG', 'GiganticB1.jpeg'),
+(11, 2, 'Double Impact Krillin', 30, 1, 'TB2-041 Holo Rare - Dragon Ball Super CCG', 'DoubleImpact1.jpeg'),
+(12,  2, 'Super Dragon Ball Heroes', 100, 1, 'UM1-CP8 Super Mira Campaign Promo', 'superDB1.jpeg'),
+(13,  4, 'Pokemon Booster Evolutions Pack\r\n', 899, 60, 'Pre-order', 'evolutionsbox1 .jpg'),
+(14,  4, 'Celebrations Elite Trainer Box ', 1250, 5, 'Pokémon 25th Anniversary Pre-order', 'elitrainerbox25.jpeg');</sql><current_tab id="0"/></tab_sql></sqlb_project>

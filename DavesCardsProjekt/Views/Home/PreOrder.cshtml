@@ -1,0 +1,29 @@
+﻿@model List<DavesCardsProjekt.Models.Card>
+
+<div class="container-rubrik">
+    <h3>Pre order</h3>
+</div>
+
+<div class="container">
+    <div class="card-container">
+
+        @foreach (var card in Model) //Loopar ut innehållet från modellen, som finns lagrat i databasen. 
+        {
+            <div class="card">
+                <div class="card-top">
+
+                    <h1 class="card-title"> @Html.DisplayFor(m => card.Name)</h1>
+                    <p class="card-price"> @Html.DisplayFor(m => card.Price) KR </p>
+                    <img class="card-img" src="~/cardsimg/@Html.DisplayFor(m => card.ImgPath)" />
+                    <p class="card-descript"> @Html.DisplayFor(m => card.Description)</p>
+                    <p class="card-stock"> Antal: @Html.DisplayFor(m => card.Stock)</p>
+                    <button class="tocart-btn"><p>Lägg i varukorg</p></button>
+
+                </div>
+            </div>
+
+        }
+
+
+    </div>
+</div>
